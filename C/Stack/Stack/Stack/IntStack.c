@@ -12,7 +12,8 @@
 /// * 스택 초기화
 int init(IntStack *s, int max) {
     s->ptr = 0;
-    if (s->stk = calloc(max, sizeof(int)) == NULL) {
+    s->stk = calloc(max, sizeof(int));
+    if (s->stk == NULL) {
         s->max = 0;
         return -1;
     }
@@ -32,7 +33,8 @@ int pop(IntStack *s, int *x) {
     if (s->ptr <= 0) {
         return -1;
     }
-    *x = s->stk[s->ptr--];
+    printAll(s);
+    *x = s->stk[(s->ptr--)-1];
     return 0;
 }
 /// * 맨 위 요소 검색
@@ -87,4 +89,16 @@ void terminate(IntStack *s) {
         free(s->stk);
     }
     s->max = s->ptr = 0;
+}
+/// - 하나의 배열을 공유하여 2개의 스택을 구현하는 스택프로그램을 만드시오.
+void Answer(void) {
+    
+    //  배열 크기 지정
+    int arrayMax;
+    printf("배열의 크기를 지정해주세요");
+    scanf("%d",&arrayMax);
+    
+    //  배열 생성
+    int array[arrayMax];
+   
 }
