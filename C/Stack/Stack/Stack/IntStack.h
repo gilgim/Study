@@ -42,5 +42,4 @@ int search(const IntStack *s, int x);
 void printAll(const IntStack *s);
 /// * 스택 종료
 void terminate(IntStack *s);
-void Answer(void);
 #endif /* IntStack_h */

@@ -90,15 +90,3 @@ void terminate(IntStack *s) {
     }
     s->max = s->ptr = 0;
 }
-/// - 하나의 배열을 공유하여 2개의 스택을 구현하는 스택프로그램을 만드시오.
-void Answer(void) {
-    
-    //  배열 크기 지정
-    int arrayMax;
-    printf("배열의 크기를 지정해주세요");
-    scanf("%d",&arrayMax);
-    
-    //  배열 생성
-    int array[arrayMax];
-   
-}
