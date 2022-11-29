@@ -6,11 +6,12 @@
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 #include "Recursion.h"
 int main(int argc, const char * argv[]) {
     int menu, x;
     while (1) {
-        printf("순차곱셉(1) 최대공배수(2) 종료(0)\n");
+        printf("순차곱셉(1) 최대공배수(2) 8퀸(4) 종료(0)\n");
         printf("메뉴를 입력하세요 : ");
         scanf("%d",&menu);
         getchar();
@@ -37,6 +38,16 @@ int main(int argc, const char * argv[]) {
                 else {
                     printf("공배수가 존재하지 않습니다.\n");
                 }
+                break;
+            }
+            case 4: {
+                setQuene();
+//                int chess[8] = {0,0,0,0,0,0,0,0};
+//                int columnArr[8] = {0,0,0,0,0,0,0,0};
+//                int rightUpArr[14] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+//                int leftUpArr[14] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+//                int count = 1;
+//                customQuene(0, &chess, &columnArr, &rightUpArr, &leftUpArr, &count);
                 break;
             }
         }
